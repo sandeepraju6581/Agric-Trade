@@ -1,0 +1,169 @@
+.navbar
+{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo
+{
+    width: 200px;
+}
+.navbar-menu
+{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;
+}
+.navbar-right
+{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.navbar button
+{
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid rgb(31, 151, 77);
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navbar button:hover{
+    background-color: #f2fff2;
+}
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+
+}
+.navbar li{
+    cursor: pointer;
+}
+.navbar li:hover{
+    color:green;
+}
+.navbar-search-icon
+{
+    position: relative;
+
+}
+.navbar-search-icon .dot
+{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: -8px;
+    right:-8px;
+}
+
+.navbar-profile {
+    position: relative; /* Position the dropdown menu correctly */
+    display: inline-block;
+    z-index: 1; /* Allow for inline placement if needed */
+  }
+  
+  .navbar-profile img {
+    cursor: pointer; /* Indicate interactivity on hover */
+    width: [icon size]; /* Set desired icon size */
+    height: [icon size]; /* Set desired icon size */
+  }
+  
+  .navbar-profile-dropdown {
+    position: absolute; /* Position the dropdown menu absolutely */
+    top: 100%; /* Position below the profile image */
+    left: 0; /* Align to the left of the profile image */
+    background-color: #fff; /* Set background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    display: none; /* Hide initially */
+  }
+  
+  .navbar-profile:hover .navbar-profile-dropdown {
+    display: block; /* Show dropdown menu on hover */
+  }
+  
+  .navbar-profile-dropdown li {
+    padding: 10px; /* Add spacing between menu items */
+    display: flex; /* Arrange items horizontally */
+    align-items: center; /* Vertically align content */
+    cursor: pointer; /* Indicate interactivity for each item */
+  }
+  
+  .navbar-profile-dropdown li img {
+    width: [icon size]; /* Set desired icon size */
+    height: [icon size]; /* Set desired icon size */
+    margin-right: 10px; /* Add spacing between icon and text */
+  }
+  
+  .navbar-profile-dropdown li p {
+    margin: 0; /* Remove default margin */
+    font-size: 14px; /* Set desired font size */
+  }
+  
+  .navbar-profile-dropdown hr {
+    border: none; /* Remove default border */
+    border-top: 1px solid #ddd; /* Add a thin separator */
+    margin: 5px 0; /* Add spacing above and below separator */
+  }
+  
+@media (max-width:1050px) {
+  .navbar .logo{
+    width: 140px;
+  }    
+  .navbar-menu
+  {
+    gap: 20px;
+    font-size: 17px;
+  }
+  .navbar-right{
+    gap:30px;
+  }
+  .navbar-right img
+  {
+        width: 22px;
+  }
+  .navbar-right button
+  {
+    padding: 8px 25px;
+
+  }
+}
+@media (max-width:900px) {
+    .navbar .logo{
+      width: 140px;
+    }    
+    .navbar-menu
+    {
+      gap: 15px;
+      font-size: 16px;
+    }
+    .navbar-right{
+      gap:20px;
+    }
+    .navbar-right img
+    {
+          width: 20px;
+    }
+    .navbar-right button
+    {
+      padding: 7px 20px;
+      font-size: 15px;
+    }
+  }
+  @media (max-width:750px) {
+   
+    .navbar-menu
+    {
+      display: none;
+    }
+    
+  }
